@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    background-color: rgb(187, 245, 201);
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    /* It needs some top padding to make sure that the menu doesn't cover the content */
+    padding: 6rem 2rem 5rem;
+    /* The content should always use all the available height when possible */
+    min-height: 100vh;
+}
+
+main, nav ul {
+    display: block;
+    /* Center it */
+    margin: 0 auto;
+    /* Provide a maximum width*/
+    max-width: 1024px;
+    background-color: white;
+}
+
+nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav ul {
+    /* Allow the links to be distributed horizontally */
+    display: flex;
+}
+
+nav ul li {
+    /* Tell each element to take up as much space as possible */
+    flex: 1;
+    list-style: none;
+    text-align: center;
+}
+
+
+/* Give every link a right margin, except for the last one */
+
+nav ul li:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0;
+}
+
+.current {
+    background-color: rgb(171, 207, 255);
+}
+
+a:link {
+    background-color: rgba(255, 182, 182, 0.9);
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgb(184, 69, 69);
+}
+
+a:active {
+    background-color: #666666;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Maven Pro', cursive;
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(0, 83, 104);
+    margin: 2rem 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Maven Pro', cursive;
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(46, 105, 93);
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+p, .pg, .instructions {
+    color: rgb(50, 31, 102);
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
